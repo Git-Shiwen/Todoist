@@ -13,7 +13,7 @@ class Task:
         # Click create task
         time.sleep(2)
         self.driver.find_element_by_id('com.todoist:id/fab').click()
-        time.sleep(2)
+        time.sleep(5)
 
         # #Create task name
         task_name_element = self.driver.find_element_by_id('android:id/message')

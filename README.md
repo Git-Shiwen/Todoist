@@ -30,7 +30,7 @@ NOTE:
 - Not consider negative scenarios, such as wrong login; 
 
 Known bugs:
-1. Failed to check if the project name exists in "Project.py"
+- N/A
 
 To do:
 1. Verify if the project created exists in the application 

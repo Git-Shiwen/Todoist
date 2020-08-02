@@ -13,7 +13,7 @@ class Project:
         # Click hamburger button
         if self.hamburger_button == False:
             self.driver.find_element_by_xpath("//android.widget.ImageButton[@content-desc='Change the current view']").click()
-            time.sleep(2)
+            time.sleep(5)
 
         # Click create project
         self.driver.find_element_by_id('com.todoist:id/add').click()

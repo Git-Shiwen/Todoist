@@ -37,11 +37,12 @@ class Project:
         #Open an existing project
         self.driver.find_element_by_xpath("//android.widget.ImageView[@content-desc='Expand/collapse']").click()
         time.sleep(5)
-        project_name_path="//android.widget.TextView[@content-desc='{}']".format(self.project_name)
-        #Known bug: failed to check if the project name exists
+        project_name_path="//android.widget.TextView[@text='{}']".format(self.project_name)
+        #If the project exists, no need create the same project again;
         try:
             project_name_element = self.driver.find_element_by_xpath(project_name_path)
             time.sleep(2)
+            print('Project: {} exists! No need create the same project again'.format(self.project_name))
             project_name_element.click()
             time.sleep(2)
         except NoSuchElementException:

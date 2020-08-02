@@ -33,6 +33,5 @@ Known bugs:
 - N/A
 
 To do:
-1. Verify if the project created exists in the application 
-2. Verify if the task created exists in the project 
+1. Verify if the task created exists in the project 
 
